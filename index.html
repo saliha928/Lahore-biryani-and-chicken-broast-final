@@ -831,6 +831,28 @@ function renderHist(){
     </div>`;
   }).join('');
 }
+
+  <div id="menu"></div>
+
+  <script>
+    // items first
+    const items = [
+      { id: "e1", cat: "extras", img: "./folder1/zarda.jpg" }
+    ];
+
+    // then rendering
+    const menu = document.getElementById("menu");
+
+    items.forEach(item => {
+      menu.innerHTML += `
+        <div>
+          <img src="${item.img}">
+          <p>${item.cat}</p>
+        </div>
+      `;
+    });
+  </script>
 </script>
+  <div id="menu"></div>
 </body>
 </html>
